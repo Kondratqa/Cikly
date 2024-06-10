@@ -12,6 +12,7 @@ public class FreelancerService {
     public static int calculate(int income, int expenses, int threshold) {
         int count = 0;
         int money = 0;
+        int spentOnVacation = 0;
 
         for (int month = 1; month <= 12; month++) {
             System.out.print("Месяц " + month + ". Денег " + money + ". ");
@@ -27,6 +28,8 @@ public class FreelancerService {
                 System.out.print("Придётся работать. " + "Заработал +" + income);
                 money = money + income - expenses;
             }
+
+
 
             System.out.println(", потратил " + expenses);
 
